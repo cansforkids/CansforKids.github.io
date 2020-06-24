@@ -72,7 +72,7 @@
 
     #titleArea {
       font-family: "Open Sans"; font-size: 100px; position: absolute; color: white;
-      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/images/foodincar.jpg");
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://cansforkids.github.io/images/foodincar.jpg");
       background-repeat: no-repeat; position: absolute; text-shadow: 0px 0px 10px black; width: 100%; margin-top: 0px;
       margin-right: auto; z-index: 0; height: 100vh; object-fit: cover; background-size: cover; background-attachment: fixed;
       display: flex; justify-content: center; align-items: center; margin-left: auto; background-position: center;
@@ -198,8 +198,36 @@
       line-height: 30px;
     }
 
-    @media only screen and (min-width: 1300px) {
+    @media screen and (max-width: 1150px) {
 
+      #menu {
+        width: 100%;
+      }
+      #titleArea {
+        width: 100vw;
+      }
+      #content-about {
+        width: 100%;
+      }
+      #aboutall {
+        display: inline; width: 100vw; width: 100%;
+      }
+      #content-about-header {
+        font-size: 75px; line-height: normal; width: 75vw; border: none;
+        border-left: 3px solid #ff4a4a; padding-left: 25px; width: 100%;
+      }
+      #content-about-text {
+        font-size: 40px; line-height: 60px;; display: inline; width: 100%;
+      }
+      #about-left {
+        padding-left: 100px;
+      }
+      #abouttext {
+        width: 90%;
+      }
+      #about-right {left: 0; width: 100%; padding-left: 0;}
+      #about-image {width: 100%; object-fit: cover; height: 500px; padding-left: 0;}
+      #spacer {height: 3000px;}
     }
     </style>
   </head>
@@ -242,7 +270,7 @@
             </div>
           </div>
           <div id="about-right">
-            <img src="/images/fullteam.jpg" id="about-image" width="480px" height="270px"></img>
+            <img src="https://cansforkids.github.io/images/fullteam.jpg" id="about-image" width="480px" height="270px"></img>
           </div>
         </div>
       </div>
@@ -265,7 +293,7 @@
             </div>
           </div>
           <div id="goals-right">
-            <img src="/images/boxongrass.jpg" height="300px" width="300px" id="content-goals-image"></img>
+            <img src="https://cansforkids.github.io/images/boxongrass.jpg" height="300px" width="300px" id="content-goals-image"></img>
           </div>
         </div>
       </div>
@@ -275,8 +303,8 @@
       <div id="also">
         <p id="alsotext">Cans for Kids has also donated masks to workers who provide food for those in need.<br>
         So far, 600 masks have been donated.</p>
-        <img src="/images/2ndharvestmask.jpg" id="mask1" height="300px" width="500px">
-        <img src="/images/cmsmask.jpg" id="mask2" height="300px" width="500px">
+        <img src="https://cansforkids.github.io/images/2ndharvestmask.jpg" id="mask1" height="300px" width="500px">
+        <img src="https://cansforkids.github.io/images/cmsmask.jpg" id="mask2" height="300px" width="500px">
       </div>
 
       <p id="spacer"></p>
