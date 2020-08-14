@@ -5,7 +5,7 @@
     <link rel='icon' href="https://cansforkids.github.io/images/logo.png">
     <title>Cans for Kids</title>
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Open+Sans:wght@300&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@350;400;469&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 
@@ -60,7 +60,7 @@
       border: none; cursor: pointer;
     }
 
-    #menu-about:hover, #menu-goals:hover, #menu-contact:hover, #menu-home:hover {
+    #menu-about:hover, #menu-goals:hover, #menu-contact:hover, #menu-home:hover, #menu-contact:hover, #menu-contact:hover {
       border: 2px solid black;
     }
     #menu-about:active, #menu-goals:focus, #menu-contact:focus, #menu-home:focus {
@@ -110,7 +110,7 @@
     }
 
     #spacer {
-      height: 500px; background: white;
+      height: 550px; background: white;
     }
     #spacer2 {
       height: 200px; background: white;
@@ -144,7 +144,7 @@
     }
     #content-about-text, #content-goals-text {
       margin-top: -25px;
-      font-size: 15px;
+      font-size: 17px;
     }
     #also {
       left: 0; right: 0; margin-top: 100vh; position: absolute; background: #23313b;
@@ -241,6 +241,8 @@
       <button id="menu-home" onClick="homeScroll()">Home</button>
       <button id="menu-about" onClick="aboutScroll()">About</button>
       <button id="menu-goals" onClick="goalsScroll()">Goals</button>
+      <a href="" id="menu-contact">Team</a>
+      <a href="" id="menu-contact">Gallery</a>
       <button id="menu-contact" onClick="contactScroll()">Contact</button>
       <a href="https://www.gofundme.com/f/cansforkids2020" target="_blank" id="menu-donate">Donate</a>
     </div>
@@ -333,24 +335,24 @@
 
   </div>
   <script>
-  var scrollHome = document.getElementById("titleArea");
-  function homeScroll() {
-    scrollHome.scrollIntoView({behavior: "smooth"});
-  }
-  var scrollAbout = document.getElementById("content-about");
-  function aboutScroll(){
-    scrollAbout.scrollIntoView({behavior: "smooth"});
-    document.getElementById("content-about").style.border = "2px solid white";
-  }
-  var scrollGoals = document.getElementById("content-goals");
-  function goalsScroll(){
-    scrollGoals.scrollIntoView({behavior: "smooth"});
-  }
-  var scrollContact = document.getElementById("contactContent");
-  function contactScroll(){
-    scrollContact.scrollIntoView({behavior: "smooth"});
-  }
+    var scrollHome = document.getElementById("titleArea");
+    function homeScroll() {
+      scrollHome.scrollIntoView({behavior: "smooth"});
+    }
+    var scrollAbout = document.getElementById("content-about");
+    function aboutScroll(){
+      scrollAbout.scrollIntoView({behavior: "smooth"});
+    }
 
+    var scrollGoals = document.getElementById("content-goals");
+    function goalsScroll() {
+      scrollGoals.scrollIntoView({behavior: "smooth"});
+    }
+
+    var scrollContact = document.getElementById("contactContent");
+    function contactScroll() {
+      scrollContact.scrollIntoView({behavior: "smooth"});
+    }
   </script>
 </body>
 </html>
