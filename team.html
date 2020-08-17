@@ -1,1 +1,221 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel='icon' href="https://cansforkids.github.io/images/logo.png">
+    <title>Cans for Kids - Meet the Team</title>
+    <style>
 
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@350;400;469&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+    html, body {
+      padding: 0; margin: 0;
+    }
+    body {
+      overflow: overlay; background: #191d21;
+    }
+    ::-webkit-scrollbar {
+      width: 7px;
+      z-index: 1;
+    }
+    ::-webkit-scrollbar-thumb {
+      border-radius: 0px;
+      background: #ff4a4a;
+      z-index: 1;
+    }
+    ::-webkit-scrollbar-track {
+      background: rgba(0, 0, 0, 0);
+      border-radius: 0px;
+      z-index: 1;
+    }
+    #menu {
+      background-color: white; height: 65px; display: flex;
+      border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;
+      align-items: center; padding-left: 25px; width: 100vw;
+      box-shadow: 0px 0px 15px #333333; position: fixed; z-index: 2;
+    }
+    #menu-Title {
+      font-family: "Oswald"; font-size: 25px; margin-left: 20px;
+      color: #ff4a4a; text-decoration: none; padding-top: 10px; padding-bottom: 10px;
+      border: none; background: none; cursor: default;
+    }
+    #menu-home {
+      margin-left: 100px; font-size: 22px; text-decoration: none; color: black;
+      font-family: "Roboto Condensed"; padding-top: 10px; padding-bottom: 10px;
+      transition: border 0.15s; padding-left: 15px; padding-right: 15px;
+      border: 2px solid white; background: none; cursor: pointer;
+    }
+    #menu-about, #menu-goals, #menu-contact {
+      margin-left: 20px; font-size: 22px; text-decoration: none; color: black;
+      font-family: "Roboto Condensed"; padding-top: 10px; padding-bottom: 10px;
+      transition: border 0.15s; padding-left: 15px; padding-right: 15px;
+      border: 2px solid white; background: none; cursor: pointer;
+    }
+    #menu-donate {
+      background: #ff4a4a; text-decoration: none; right: 100px;
+      font-family: "Oswald"; font-size: 22px; color: white; padding-left: 15px;
+      border-radius: 0px; padding-right: 15px; padding-top: 2.5px;
+      padding-bottom: 5px; transition: border-radius 0.4s; position: absolute;
+      border: none; cursor: pointer;
+    }
+
+    #menu-about:hover, #menu-goals:hover, #menu-contact:hover, #menu-home:hover, #menu-contact:hover {
+      border: 2px solid black;
+    }
+    #menu-about:active, #menu-goals:focus, #menu-contact:focus, #menu-home:focus {
+      border: 2px solid white;
+    }
+
+    #menu-donate:hover {
+      border-radius: 100px;
+    }
+    #titleArea {
+      font-family: "Open Sans"; font-size: 100px; position: absolute; color: white;
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("C:/webimages/CFK/fullteamcropped.jpg");
+      background-repeat: no-repeat; position: absolute; text-shadow: 0px 0px 10px black; width: 100%; margin-top: 0px;
+      margin-right: auto; z-index: 0; height: 100vh; object-fit: cover; background-size: cover; background-attachment: fixed;
+      display: flex; justify-content: center; align-items: center; margin-left: auto; background-position: top;
+    }
+
+    #title {
+      margin-top: 0px; font-family: "Oswald"; font-size: 100px;
+      text-transform: uppercase; letter-spacing: 15px; padding-top: 20px;
+      padding-bottom: 20px; border-top: 5px solid #ff4a4a; border-bottom: 5px solid #ff4a4a;
+      padding-left: 40px; padding-right: 40px; margin-top: 30px;
+    }
+    #titleLogo {
+      position: absolute;
+      object-fit: cover;
+      display: flex; justify-content: center; align-items: center;
+      width: 200px; height: 200px; border-radius: 1000px;
+    }
+    #teamsection {
+      position: absolute; top: 130vh; color: white; display: flex;
+      align-items: center; left: 0; right: 0;
+    }
+    #p1, #p2, #p3, #p4 {
+      position: absolute; width: 25vw; height: 600px; cursor: pointer;
+    }
+    #p1:hover #ptitle{border-top: 4px solid #ff4a4a; border-bottom: 4px solid #ff4a4a;}
+    #p2:hover #ptitle{border-top: 4px solid #ff4a4a; border-bottom: 4px solid #ff4a4a;}
+    #p3:hover #ptitle{border-top: 4px solid #ff4a4a; border-bottom: 4px solid #ff4a4a;}
+    #p4:hover #ptitle{border-top: 4px solid #ff4a4a; border-bottom: 4px solid #ff4a4a;}
+    
+    #text1, #text2, #text3, #text4 {
+      padding-left: 40px; padding-right: 40px; padding-top: 40px;
+    }
+    #p1 {
+      background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("C:/webimages/CFK/p1jerry.png");
+      background-position: center; background-size: cover; transition: background-image 0.3s; color: transparent; transition: color 0.5s;
+    }
+    #p1:hover {
+      background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("C:/webimages/CFK/p1jerry.png");
+      background-position: center; background-size: cover; color: white;
+    }
+    #p2 {
+      background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("C:/webimages/CFK/p2richard2.png");
+      left: 50vw; background-position: left; background-size: cover; transition: background-image 0.3s; color: transparent; transition: color 0.5s;
+    }
+    #p2:hover {
+      background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("C:/webimages/CFK/p2richard2.png");
+      background-position: center; background-size: cover; color: white;
+    }
+    #p3 {
+      background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("C:/webimages/CFK/p3joshua.png");
+      left: 25vw; background-position: center; background-size: cover; transition: background-image 0.3s; color: transparent; transition: color 0.5s;
+    }
+    #p3:hover {
+      background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("C:/webimages/CFK/p3joshua.png");
+      background-position: center; background-size: cover; color: white;
+    }
+    #p4 {
+      background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("C:/webimages/CFK/p4eric.png");
+      left: 75vw; background-position: center; background-size: cover; transition: background-image 0.3s; color: transparent; transition: color 0.5s;
+    }
+    #p4:hover {
+      background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("C:/webimages/CFK/p4eric.png");
+      background-position: center; background-size: cover; color: white;
+    }
+    #otitle {
+      position: absolute; top: 105vh; font-size: 60px; color: #ff4a4a; font-family: "Oswald";
+      left: 50%; transform: translate(-50%, 0%);
+    }
+    #ptitle {
+      border-top: 4px solid transparent; border-bottom: 4px solid transparent; transition: border-top 0.3s;
+      transition: border-bottom 0.3s; font-size: 60px; font-family: "Oswald";padding:0;
+    }
+    #pcontent {
+      font-size: 15px; font-family: "Open Sans"; line-height: 25px;
+    }
+    #contactContent {
+      left: 0; right: 0; position: absolute; bottom: -1220px;
+      background: slategray; height: 300px; padding-left: 75px;
+      padding-top: 25px;
+    }
+    #contactTitle {
+      color: white; font-size: 35px; font-family: "Roboto Condensed";
+      border-bottom: 2px solid white; width: 600px; padding-bottom: 20px;
+    }
+    #contactEmail {
+      color: white; font-family: "Open Sans"; font-size: 17px;
+      line-height: 30px;
+    }
+    </style>
+  </head> 
+<body>
+
+    <div id="menu">
+      <p id="menu-Title">Cans for Kids</p>
+      <a id="menu-home" href="http:/cansforkids.github.io/home">Home</a>
+      <button id="menu-about" onClic`k="aboutScroll()">About</button>
+      <button id="menu-goals" onClick="goalsScroll()">Goals</button>
+      <a href="http:/cansforkids.github.io/team" id="menu-contact">Team</a>
+      <a href="http:/cansforkids.github.io/gallery" id="menu-contact">Gallery</a>
+      <button id="menu-contact" onClick="contactScroll()">Contact</button>
+      <a href="https://www.gofundme.com/f/cansforkids2020" target="_blank" id="menu-donate">Donate</a>
+    </div>
+    <div id="titleArea">
+      <div id="landingplate">
+        <p id="title">Team</p>
+      </div>
+    </div>
+
+    <p id="otitle">Our Team</p>
+
+    <div id='teamsection'>
+      <div id="tsrow1">
+        <div id="p1"><div id="text1"><p id="ptitle">Jerry Lin</p><p id="pcontent">Jerry is the founder of Cans for Kids. He is in 10th grade at Ardrey Kell High School.</p></div></div>
+        <div id="p2"><div id="text2"><p id="ptitle">Richard Lin</p><p id="pcontent">Richard is a co-founder of Cans for Kids and he goes to school at Ardrey Kell High School in 9th grade.</p></div></div>
+        <div id="p3"><div id="text3"><p id="ptitle">Joshua Cai</p><p id="pcontent">Joshua is a co-founder of cans for kids and he goes to Ardrey Kell High School in 11th grade.</p></div></div>
+        <div id="p4"><div id="text4"><p id="ptitle">Eric Cai</p><p id="pcontent">Eric is a co-founder of Cans for Kids and he goes to school at Ardrey Kell High School in 9th grade.</p></div></div>
+        
+      </div>
+    </div>
+    <div id="contactContent">
+      <p id="contactTitle">Contact Us</p>
+      <div id="contactEmail">
+        <p>If you have any questions or concerns, please email us at:<br> cansforkidsnc@gmail.com</p>
+      </div>
+
+    </div>
+
+  <script>
+    var scrollHome = document.getElementById("titleArea");
+    function homeScroll() {
+      if (window.location.href == 'file:///C:/Users/Richard%20Lin/Downloads/HTML%20AND%20CSS%20PROJECTS/cansforkids/cansforkids.html') {
+          scrollHome.scrollIntoView({behavior: "smooth"});
+      }
+      else {
+        window.location.replace("cansforkids.github.io");
+        scrollHome.scrollIntoView({behavior: "smooth"});
+      }
+    }
+    var scrollContact = document.getElementById("contactContent");
+    function contactScroll() {
+      scrollContact.scrollIntoView({behavior: "smooth"});
+    }
+  </script>
+</body>
+</html>
