@@ -138,16 +138,16 @@
 <body>
 
     <div id="menu">
-      <p id="menu-Title">Cans for Kids</p>
-      <a id="menu-home" href="/">Home</a>
-      <button id="menu-about" onClick="aboutScroll()">About</button>
-      <button id="menu-goals" onClick="goalsScroll()">Goals</button>
-      <a href="/team" id="menu-contact">Team</a>
-      <a href="/volunteering" id="menu-contact">Volunteer</a>
-      <a href="/gallery" id="menu-contact">Gallery</a>
-      <button id="menu-contact" onClick="contactScroll()">Contact</button>
-      <a href="https://www.gofundme.com/f/cansforkidsnc" target="_blank" id="menu-donate">Donate</a>
-    </div>
+        <p id="menu-Title">Cans for Kids</p>
+        <a href="./" id="menu-home">Home</a>
+        <button id="menu-about" onClick="section('content-about')">About</button>
+        <button id="menu-goals" onClick="section('content-goals')">Goals</button>
+        <a href="./team" id="menu-contact">Team</a>
+        <a href="./volunteering" id="menu-contact">Volunteer</a>
+        <a href="./gallery" id="menu-contact">Gallery</a>
+        <button id="menu-contact" onClick="section('contactContent')">Contact</button>
+        <a href="https://www.gofundme.com/f/cansforkidsnc" target="_blank" id="menu-donate">Donate</a>
+      </div>
     <div id="vcontent">
         <p id="title">Volunteer</p>
         <p id="activites">Volunteer activities include reaching out to social platforms, fundraising, 
@@ -184,7 +184,6 @@
         </div>
     </div>
 
-<script>
-</script>
+    <script src="js/menu.js"></script>
 </body>
 </html>

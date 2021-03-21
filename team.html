@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Cans for Kids - Team" />
-    <meta property="og:description" content="Cans for Kids is an organization that was created to assist children in need during the times of the Covid-19 crisis. Meet our team members here on the website now!" />
-    <meta property="og:url" content="https://cansforkidsnc.org/team" />
-    <meta property="og:image" content="https://cansforkids.github.io/images/logo.png" />
-    <link rel='icon' href="/images/logo.png">
-    <title>Cans for Kids - Meet the Team</title>
-    <style>
-
+<head>
+  <meta charset="utf-8">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Cans for Kids - Team" />
+  <meta property="og:description" content="Cans for Kids is an organization that was created to assist children in need during the times of the Covid-19 crisis. Meet our team members here on the website now!" />
+  <meta property="og:url" content="https://cansforkidsnc.org/team" />
+  <meta property="og:image" content="https://cansforkids.github.io/images/logo.png" />
+  <link rel='icon' href="/images/logo.png">
+  <title>Cans for Kids - Meet the Team</title>
+  <style>
+    
     @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@350;400;469&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
-
+    
     html, body {
       padding: 0; margin: 0;
     }
@@ -65,14 +65,14 @@
       padding-bottom: 5px; transition: border-radius 0.4s; position: absolute;
       border: none; cursor: pointer;
     }
-
+    
     #menu-about:hover, #menu-goals:hover, #menu-contact:hover, #menu-home:hover, #menu-contact:hover {
       border: 2px solid black;
     }
     #menu-about:active, #menu-goals:focus, #menu-contact:focus, #menu-home:focus {
       border: 2px solid white;
     }
-
+    
     #menu-donate:hover {
       border-radius: 100px;
     }
@@ -83,7 +83,7 @@
       margin-right: auto; z-index: 0; height: 100vh; object-fit: cover; background-size: cover; background-attachment: fixed;
       display: flex; justify-content: center; align-items: center; margin-left: auto; background-position: top;
     }
-
+    
     #title {
       margin-top: 0px; font-family: "Oswald"; font-size: 100px;
       text-transform: uppercase; letter-spacing: 15px; padding-top: 20px;
@@ -167,61 +167,46 @@
       color: white; font-family: "Open Sans"; font-size: 17px;
       line-height: 30px;
     }
-    </style>
-  </head> 
+  </style>
+</head> 
 <body>
-
-      <div id="menu">
-        <p id="menu-Title">Cans for Kids</p>
-        <a href="/" id="menu-home">Home</a>
-        <button id="menu-about" onClick="aboutScroll()">About</button>
-        <button id="menu-goals" onClick="goalsScroll()">Goals</button>
-        <a href="/team" id="menu-contact">Team</a>
-        <a href="/volunteering" id="menu-contact">Volunteer</a>
-        <a href="/gallery" id="menu-contact">Gallery</a>
-        <button id="menu-contact" onClick="contactScroll()">Contact</button>
-        <a href="https://www.gofundme.com/f/cansforkidsnc" target="_blank" id="menu-donate">Donate</a>
-      </div>
-    <div id="titleArea">
-      <div id="landingplate">
-        <p id="title">Team</p>
-      </div>
+  
+  <div id="menu">
+    <p id="menu-Title">Cans for Kids</p>
+    <a href="./" id="menu-home">Home</a>
+    <button id="menu-about" onClick="section('content-about')">About</button>
+    <button id="menu-goals" onClick="section('content-goals')">Goals</button>
+    <a href="./team" id="menu-contact">Team</a>
+    <a href="./volunteering" id="menu-contact">Volunteer</a>
+    <a href="./gallery" id="menu-contact">Gallery</a>
+    <button id="menu-contact" onClick="section('contactContent')">Contact</button>
+    <a href="https://www.gofundme.com/f/cansforkidsnc" target="_blank" id="menu-donate">Donate</a>
+  </div>
+  <div id="titleArea">
+    <div id="landingplate">
+      <p id="title">Team</p>
     </div>
-
-    <p id="otitle">Our Team</p>
-
-    <div id='teamsection'>
-      <div id="tsrow1">
-        <div id="p1"><div id="text1"><p id="ptitle">Jerry Lin</p><p id="pcontent">Jerry is the founder of Cans for Kids. He a sophomore in Ardrey Kell High School.</p></div></div>
-        <div id="p2"><div id="text2"><p id="ptitle">Richard Lin</p><p id="pcontent">Richard is a co-founder of Cans for Kids and he is a freshman Ardrey Kell High School.</p></div></div>
-        <div id="p3"><div id="text3"><p id="ptitle">Joshua Cai</p><p id="pcontent">Joshua is a co-founder of Cans for Kids and he is a junior Ardrey Kell High School.</p></div></div>
-        <div id="p4"><div id="text4"><p id="ptitle">Eric Cai</p><p id="pcontent">Eric is a co-founder of Cans for Kids and he is a freshman Ardrey Kell High School.</p></div></div>
-        
-      </div>
+  </div>
+  
+  <p id="otitle">Our Team</p>
+  
+  <div id='teamsection'>
+    <div id="tsrow1">
+      <div id="p1"><div id="text1"><p id="ptitle">Jerry Lin</p><p id="pcontent">Jerry is the founder of Cans for Kids. He a sophomore in Ardrey Kell High School.</p></div></div>
+      <div id="p2"><div id="text2"><p id="ptitle">Richard Lin</p><p id="pcontent">Richard is a co-founder of Cans for Kids and he is a freshman Ardrey Kell High School.</p></div></div>
+      <div id="p3"><div id="text3"><p id="ptitle">Joshua Cai</p><p id="pcontent">Joshua is a co-founder of Cans for Kids and he is a junior Ardrey Kell High School.</p></div></div>
+      <div id="p4"><div id="text4"><p id="ptitle">Eric Cai</p><p id="pcontent">Eric is a co-founder of Cans for Kids and he is a freshman Ardrey Kell High School.</p></div></div>
+      
     </div>
-    <div id="contactContent">
-      <p id="contactTitle">Contact Us</p>
-      <div id="contactEmail">
-        <p>If you have any questions or concerns, please email us at:<br> cansforkidsnc@gmail.com</p>
-      </div>
-
+  </div>
+  <div id="contactContent">
+    <p id="contactTitle">Contact Us</p>
+    <div id="contactEmail">
+      <p>If you have any questions or concerns, please email us at:<br> cansforkidsnc@gmail.com</p>
     </div>
-
-  <script>
-    var scrollHome = document.getElementById("titleArea");
-    function homeScroll() {
-      if (window.location.href == 'file:///C:/Users/Richard%20Lin/Downloads/HTML%20AND%20CSS%20PROJECTS/cansforkids/cansforkids.html') {
-          scrollHome.scrollIntoView({behavior: "smooth"});
-      }
-      else {
-        window.location.replace("cansforkids.github.io");
-        scrollHome.scrollIntoView({behavior: "smooth"});
-      }
-    }
-    var scrollContact = document.getElementById("contactContent");
-    function contactScroll() {
-      scrollContact.scrollIntoView({behavior: "smooth"});
-    }
-  </script>
+    
+  </div>
+  
+  <script src="js/menu.js"></script>  
 </body>
 </html>
