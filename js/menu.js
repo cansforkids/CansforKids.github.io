@@ -4,6 +4,6 @@ function section(id) {
     if (onHomePage) {
         document.getElementById(id).scrollIntoView();
     } else {
-        location.href = onLocalComputer ? `./index.html#${id}` : './home' ;
+        location.href = onLocalComputer ? `./index.html#${id}` : '/' ;
     }
 }
