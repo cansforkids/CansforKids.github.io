@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Cans for Kids" />
     <meta property="og:description" content="Cans for Kids is an organization that was created to assist children in need during the times of the Covid-19 crisis. You can help out by volunteering with us and donating cans!" />
     <meta property="og:url" content="https://cansforkidsnc.org/volunteering" />
     <meta property="og:image" content="https://cansforkids.github.io/images/logo.png" />
-    <link rel='icon' href="/images/logo.png">
+    <link rel='icon' href="./images/logo.png">
+    <link rel="stylesheet" href="./css/universal.css">
     <link rel="stylesheet" href="./css/volunteering.css">
     <title>Cans for Kids - Volunteering</title>
-  </head>
+</head>
 <body>
-
+    
     <div id="menu">
-      <p id="menu-Title">Cans for Kids</p>
-      <a id="menu-home" href="/">Home</a>
-      <button id="menu-about" onClick="aboutScroll()">About</button>
-      <button id="menu-goals" onClick="goalsScroll()">Goals</button>
-      <a href="./team" id="menu-contact">Team</a>
-      <a href="./volunteering" id="menu-contact">Volunteer</a>
-      <a href="./gallery" id="menu-contact">Gallery</a>
-      <button id="menu-contact" onClick="contactScroll()">Contact</button>
-      <a href="https://www.gofundme.com/f/cansforkidsnc" target="_blank" id="menu-donate">Donate</a>
+        <p id="menu-Title">Cans for Kids</p>
+        <a href="./" id="menu-home">Home</a>
+        <button id="menu-about" onClick="section('content-about')">About</button>
+        <button id="menu-goals" onClick="section('content-goals')">Goals</button>
+        <a href="./team" id="menu-contact">Team</a>
+        <a href="./volunteering" id="menu-contact">Volunteer</a>
+        <a href="./gallery" id="menu-contact">Gallery</a>
+        <button id="menu-contact" onClick="section('contactContent')">Contact</button>
+        <a href="https://www.gofundme.com/f/cansforkidsnc" target="_blank" id="menu-donate">Donate</a>
     </div>
     <div id="vcontent">
         <p id="title">Volunteer</p>
@@ -56,11 +57,10 @@
     <div id="contactContent">
         <p id="contactTitle">Contact Us</p>
         <div id="contactEmail">
-          <p>If you have any questions or concerns, please email us at:<br> cansforkidsnc@gmail.com</p>
+            <p>If you have any questions or concerns, please email us at:<br> cansforkidsnc@gmail.com</p>
         </div>
     </div>
-
-<script>
-</script>
+    
+    <script src="js/menu.js"></script>
 </body>
 </html>
