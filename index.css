@@ -1,0 +1,243 @@
+#title {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#title-image {
+    width: 900px;
+    height: 500px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+    object-fit: cover;
+    filter: brightness(50%);
+    border-radius: 40px;
+}
+
+#title-name {
+    position: absolute;
+    border-top: 7px solid var(--maincolor);
+    border-bottom: 7px solid var(--maincolor);
+    font-size: 100px;
+    letter-spacing: 7px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+    font-family: "Oswald";
+}
+
+#section {
+    margin-top: 100px;
+    width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+#section-header, #goals-header {
+    background: var(--maincolor);
+    font-family: "Oswald";
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    color: white;
+    width: 1125px;
+    font-size: 30px;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+}
+
+#goals-header {
+    background: rgb(53, 162, 224);
+}
+
+#section-info {
+    margin-top: -30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#section-desc, #goals-desc {
+    background: rgb(255, 255, 255);
+    font-family: "Open Sans";
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    padding-left: 40px;
+    padding-top: 50px;
+    line-height: 35px;
+    padding-right: 40px;
+    border-radius: 20px;
+    line-height: 30px;
+    height: 220px;
+    font-size: 15px;
+}
+
+#goals-desc {
+    background:rgb(255, 255, 255);
+}
+
+#section-image {
+    width: 400px;
+    height: 270px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+    object-fit: cover;
+    margin-left: 30px;
+    border-radius: 20px;
+}
+
+#spacer {
+    position: absolute;
+    height: 100%;
+}
+
+#news {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    margin-top: 70px;
+    margin-left: -35px;
+}
+
+.article {
+    margin-left: 70px;
+}
+
+.article-image {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+    width: 350px;
+    height: 225px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.article-body {
+    margin-top: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+    width: 300px;
+    padding-left: 25px;
+    padding-right: 25px;
+    height: 350px;
+    padding-top: 10px;
+    border-radius: 20px;
+}
+
+.article-header {
+    border-bottom: 3px solid var(--maincolor);
+    padding-bottom: 20px;
+    font-family: "Oswald";
+    font-size: 25px;
+}
+
+.article-text {
+    font-size: 17px;
+    font-family: "Open Sans";
+}
+
+.article-more {
+    background-color: var(--maincolor);
+    position: absolute;
+    margin-top: 5px;
+    text-decoration: none;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: "Roboto Condensed";
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.article-more:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#mask {
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+    width: 1100px;
+    margin-top: 100px;
+    text-align: center;
+    padding-top: 50px;
+    border-radius: 20px;
+    padding-bottom: 75px;
+}
+
+#mask-header {
+    color: var(--maincolor);
+    font-family: "Oswald";
+    font-size: 25px;
+}
+
+#mask-info {
+    font-family: "Roboto Condensed";
+    font-size: 20px;
+}
+
+#mask-photos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -15px;
+}
+
+#mask-image {
+    object-fit: cover;
+    height: 300px;
+    width: 450px;
+    margin-top: 40px;
+    margin-left: 30px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+}
+
+#volunteers {
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+    width: 1100px;
+    margin-top: 100px;
+    text-align: center;
+    padding-top: 50px;
+    border-radius: 20px;
+    padding-bottom: 75px;
+}
+
+#volunteer-header {
+    color: var(--maincolor);
+    font-family: "Oswald";
+    font-size: 25px;
+}
+
+#volunteer-info {
+    font-family: "Roboto Condensed";
+    font-size: 20px;
+    padding-left: 150px;
+    padding-right: 150px;
+    line-height: 33px;
+}
+
+#volunteer-image {
+    object-fit: cover;
+    height: 300px;
+    width: 900px;
+    margin-top: 40px;
+    margin-left: 30px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+}
+
+#redtext {
+    color: var(--maincolor);
+}
+
+
+
+
+
+

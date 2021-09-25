@@ -1,0 +1,81 @@
+.article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 950px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+    padding-left: 60px;
+    padding-right: 40px;
+    padding-bottom: 50px;
+    padding-top: 40px;
+    border-radius: 20px;
+}
+
+.article-text {
+    margin-right: 50px;
+}
+
+.article-header {
+    font-family: "Oswald";
+    color: var(--maincolor);
+    font-size: 25px;
+}
+
+.article-info {
+    font-family: "Roboto Condensed";
+    font-size: 17px;
+    padding-bottom: 20px;
+    line-height: 35px;
+    width: 650px;
+}
+
+.article-image {
+    background: url("https://cansforkidsnc.org/images/cmsmask.jpg");
+    object-fit: cover;
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+    transition: 0s;
+    cursor: pointer;
+    outline: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.article-image:focus {
+    margin-top: 100px;
+    width: 80%;
+    height: 80%;
+    position: fixed;
+    top: 0;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.6);
+    transition: 0.4s;
+}
+
+.article-link {
+    background: var(--maincolor);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: "Oswald";
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.2s;
+    border: none;
+    cursor: pointer;
+}
+
+.article-link:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+

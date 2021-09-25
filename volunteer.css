@@ -1,0 +1,52 @@
+#volunteer-section {
+    margin-top: 150px;
+    background: white;
+    border-radius: 20px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    font-size: 16px;
+}
+
+#volunteer-title {
+    font-family: "Oswald";
+    font-size: 30px;
+    color: var(--maincolor);
+    border-left: 3px solid var(--maincolor);
+    padding-left: 25px;
+}
+
+#volunteer-info {
+    font-family: "Open Sans";
+    line-height: 35px;
+    border-left: 3px solid var(--maincolor);
+    padding-left: 25px;
+}
+
+#volunteer-pounds {
+    font-family: "Roboto Condensed";
+    color: var(--maincolor);
+    font-size: 20px;
+}
+
+#volunteer-contact {
+    font-family: "Oswald";
+    color: rgb(53, 162, 224);
+    border-left: 3px solid rgb(53, 162, 224);
+    padding-left: 25px;
+    font-size: 25px;
+}
+
+#volunteer-contact-text {
+    font-family: "Open Sans";
+    font-size: 16px;
+    color: rgb(53, 162, 224);
+    border-left: 3px solid rgb(53, 162, 224);
+    padding-left: 25px;
+    margin-top: -10px;
+}

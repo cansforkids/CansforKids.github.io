@@ -1,0 +1,140 @@
+/*
+Import fonts
+Menu CSS
+Body CSS
+Contact CSS
+*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@350;400;469&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+:root {
+    --maincolor: #ff4a4a;
+}
+
+body {
+    background: white;
+    padding: 0; 
+    margin: 0;
+    overflow-x: hidden !important;
+    scroll-behavior: smooth;
+}
+
+#menu {
+    background: white;
+    position: fixed;
+    display: flex;
+    z-index: 200;
+    overflow-y: hidden;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    height: 65px;
+    width: 100%;
+    padding-left: 40px;
+    align-items: center;
+    top: 0;
+}
+
+#menu-name {
+    color: var(--maincolor);
+    font-family: "Oswald";
+    font-size: 25px;
+    cursor: default;
+}
+
+#menu-home, #menu-news, #menu-team, #menu-volunteer, #menu-highlights, #menu-contact, #menu-gallery {
+    margin-left: 20px;
+    text-decoration: none;
+    background: white;
+    cursor: pointer;
+    color: black;
+    font-family: "Roboto Condensed";
+    font-size: 20px;
+    border: 2px solid white;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: 0.2s;
+}
+
+#menu-home:hover, #menu-news:hover, #menu-team:hover, #menu-gallery:hover, #menu-volunteer:hover, #menu-highlights:hover, #menu-contact:hover {
+    border-bottom: 2px solid var(--maincolor);
+}
+
+#menu-home {
+    margin-left: 125px;
+}
+
+#menu-donate {
+    background: var(--maincolor);
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    border: 2px solid var(--maincolor);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: "Oswald";
+    position: absolute;
+    right: 100px;
+    transition: 0.2s;
+}
+
+#menu-donate:hover {
+    border-bottom: 2px solid black;
+} 
+
+#title {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#title-image {
+    width: 900px;
+    height: 500px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+    object-fit: cover;
+    filter: brightness(50%);
+    border-radius: 40px;
+}
+
+#title-name {
+    position: absolute;
+    border-top: 7px solid var(--maincolor);
+    border-bottom: 7px solid var(--maincolor);
+    font-size: 100px;
+    letter-spacing: 7px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+    font-family: "Oswald";
+}
+
+#contact {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+    background: white;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+    width: 90%;
+    height: 300px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding-top: 30px;
+    padding-left: 50px;
+}
+
+#contact-header {
+    color: var(--maincolor);
+    font-family: "Oswald";
+    font-size: 30px;
+}
+
+#contact-info {
+    font-size: 18px;
+    font-family: "Roboto Condensed"   
+}
+
