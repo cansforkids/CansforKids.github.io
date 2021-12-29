@@ -1,0 +1,60 @@
+@media only screen and (max-width: 1020px) {
+    #menu {
+        height: 250px;
+        padding-left: 0px;
+    }
+    #menu-name {
+        font-size: 50px;
+    }
+    #menubutton {
+        opacity: 1;
+        width: 100px;
+    }
+    #menubutton:focus + #menu {
+        display: block;
+    }
+    #title-image {
+        margin-top: 200px;
+    }
+
+    #section-header, #goals-header {
+        font-size: 100px;
+    }
+    #section-info {
+        display: block;
+    }
+    #section-desc, #goals-desc {
+        font-size: 50px;
+        line-height: 75px;
+        height: 1000px;
+    }
+    #section-image {
+        width: 1000px;
+        height: 600px;
+    }
+    #news {
+        display: block;
+    }
+    .article {
+        margin-top: 100px;
+    }
+    .article-image {
+        width: 1000px;
+        height: 600px;
+    }
+    .article-body {
+        width: 1000px;
+        height: 500px;
+    }
+    .article-header {
+        font-size: 50px;
+    }
+    .article-text {
+        font-size: 40px;
+    }
+    .article-more {
+        font-size: 50px;
+    }
+
+
+}
