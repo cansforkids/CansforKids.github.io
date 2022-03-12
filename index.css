@@ -49,7 +49,7 @@
 }
 
 #goals-header {
-    background: rgb(53, 162, 224);
+    background: var(--maincolor);
 }
 
 #section-info {
