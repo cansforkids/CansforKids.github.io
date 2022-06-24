@@ -1,3 +1,7 @@
+#menu-volunteer {
+    border-bottom: 2px solid var(--maincolor);
+}
+
 #volunteer-section {
     margin-top: 150px;
     background: white;

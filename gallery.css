@@ -1,3 +1,7 @@
+#menu-gallery {
+    border-bottom: 2px solid var(--maincolor);
+}
+
 #allimages {
     margin-top: 50px;
     text-align: center;

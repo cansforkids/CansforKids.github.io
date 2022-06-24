@@ -1,3 +1,7 @@
+#menu-home {
+    border-bottom: 2px solid var(--maincolor);
+}
+
 #title {
     margin-top: 10%;
     display: flex;

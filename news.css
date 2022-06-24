@@ -1,3 +1,7 @@
+#menu-news {
+    border-bottom: 2px solid var(--maincolor);
+}
+
 .article {
     display: flex;
     align-items: center;

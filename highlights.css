@@ -1,3 +1,7 @@
+#menu-highlights {
+    border-bottom: 2px solid var(--maincolor);
+}
+
 #highlights {
     margin-top: 100px;
     margin-left: auto;

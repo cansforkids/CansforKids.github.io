@@ -1,3 +1,7 @@
+#menu-team {
+    border-bottom: 2px solid var(--maincolor);
+}
+
 #allteam {
     z-index: 1;
     position: relative;
