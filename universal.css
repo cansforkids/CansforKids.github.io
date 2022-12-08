@@ -6,7 +6,7 @@
     --maincolor: #ff6363;
 }
 
-body {
+body, html {
     background: white;
     padding: 0; 
     margin: 0;
@@ -137,4 +137,5 @@ body {
     font-size: 18px;
     font-family: "Roboto Condensed"   
 }
+
 

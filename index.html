@@ -2,6 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no"> 
+
     <title>Cans for Kids - Home</title>
     <link rel='icon' href="./images/logo.png">
     <link rel = "stylesheet" href="universal.css">
@@ -20,6 +22,21 @@
     <a href="./gallery.html" id="menu-gallery">Gallery</a>
     <button id="menu-contact" onclick="scrollContact()">Contact</button>
     <a href="https://www.gofundme.com/f/one-dollar-challenge-for-second-harvest-food-bank" target="_blank" id="menu-donate">Donate</a>
+    </div>
+
+  <div id="tabs-m">
+    <p id="menu-name">Cans for Kids</p>
+    <a href="./index.html" id="menu-home">Home</a><br>
+    <a href="./team.html" id="menu-team">Team</a><br>
+    <a href="./news.html" id="menu-news">News</a><br>
+    <a href="./highlights.html" id="menu-highlights">Highlights</a><br>
+    <a href="./volunteer.html" id="menu-volunteer">Volunteer</a><br>
+    <a href="./gallery.html" id="menu-gallery">Gallery</a><br>
+    <button id="menu-contact" onclick="scrollContact()">Contact</button><br>
+    <a href="https://www.gofundme.com/f/one-dollar-challenge-for-second-harvest-food-bank" target="_blank" id="menu-donate">Donate</a>
+    <a id="menu-button" href="javascript:showTabs();">
+      <img src="images/menu-button.jpg" width="100" />
+    </a>
   </div>
 
   <div id="title">
@@ -30,7 +47,7 @@
   <div id="section">
     <p id="section-header">About Us</p>
     <div id="section-info">
-      <p id="section-desc" style="font-size: 15px;">Cans for Kids was initiated in April, 2020 at the beginning of the Covid-19 pandemic to assist Charlotte Mecklenburg Schools (CMS) students by collecting non-perishable foods and donating them to our peers during these troubling times. In October of 2021, we became an Ardrey Kell High School club and provide volunteer opportunities to our students through food drives, fundraisers, and other service events. As a non-profit organization, Cans for Kids continues to serve our community as a whole.</p>
+      <p id="section-desc">Cans for Kids was initiated in April, 2020 at the beginning of the Covid-19 pandemic to assist Charlotte Mecklenburg Schools (CMS) students by collecting non-perishable foods and donating them to our peers during these troubling times. In October of 2021, we became an Ardrey Kell High School club and provide volunteer opportunities to our students through food drives, fundraisers, and other service events. As a non-profit organization, Cans for Kids continues to serve our community as a whole.</p>
       <image id="section-image" src="https://cansforkidsnc.org/images/fullteam.jpg"></image>
     </div>  
   </div>
@@ -76,26 +93,26 @@
 
   <div id="news">
     <div class="article">
+      <image src="https://cdn.discordapp.com/attachments/1015424892239347762/1032462334561619998/unknown.png" class="article-image"></image>
+      <div class="article-body">
+        <p class="article-header">September Community House Pantry Event</p>
+        <p class="article-text">We partnered with Ballantyne Families Helping Neighbors In Need to stock Community House Middle School's pantry.</p>
+        <a href="./news.html" class="article-more">Read More</a>
+      </div>
+    </div>
+    <div class="article">
+      <image src="https://cansforkidsnc.org/images/canholding.jpg" class="article-image"></image>
+      <div class="article-body">
+        <p class="article-header">One Dollar Challenge</p>
+        <p class="article-text">Throughout September to October, our event, the One Dollar Challenge, will be accepting donations.</p>
+        <a href="./news.html" class="article-more">Read More</a>
+      </div>
+    </div>
+    <div class="article">
       <image src="https://cdn.discordapp.com/attachments/534555009057292338/989707464716992512/Resized_20220520_145530.jpg" class="article-image"></image>
       <div class="article-body">
         <p class="article-header">End of Year Celebration</p>
         <p class="article-text">Cans for Kids held an end-of-year celebration on May 20th, 2022 to celebrate the past year's activities.</p>
-        <a href="./news.html" class="article-more">Read More</a>
-      </div>
-    </div>
-    <div class="article">
-      <image src="https://cdn.discordapp.com/attachments/752543719336706068/966146523522007080/20220402_160044.jpg" class="article-image"></image>
-      <div class="article-body">
-        <p class="article-header">April 2nd Spring Food Drive</p>
-        <p class="article-text">On April 2nd, Cans for Kids hosted a food drive to assist in the Ardrey Kell Hunger Drive effort.</p>
-        <a href="./news.html" class="article-more">Read More</a>
-      </div>
-    </div>
-    <div class="article">
-      <image src="https://cdn.discordapp.com/attachments/772617652735705088/947153507268558928/unknown.png" class="article-image"></image>
-      <div class="article-body">
-        <p class="article-header">Ardrey Kell Campus Cleanup on February 25th</p>
-        <p class="article-text">On February 25th, Cans for Kids initiated a campus-wide clean up event to pick up trash and litter throughout the Ardrey Kell campus.</p>
         <a href="./news.html" class="article-more">Read More</a>
       </div>
     </div>
@@ -105,12 +122,13 @@
     <p id="contact-header">CONTACT US</p>
     <p id="contact-info">Email us at cansforkidsnc@gmail.com<br>Remind: @nccfk<br>Instagram: @cansforkidsnc</p>
   </div>
-  
-<script>
-  var Contactscroll = document.getElementById("contact");
+  <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+  <script src="./mobile.js"></script>
+  <script>
+    var Contactscroll = document.getElementById("contact");
     function scrollContact() {
       Contactscroll.scrollIntoView({behavior: "smooth"});
-  }
-</script>
+    }
+  </script>
 </body>
 </html>

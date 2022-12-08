@@ -1,10 +1,92 @@
+
+#tabs-m {
+    display: none;
+    overflow-y: hidden;
+}
+#menu-button {
+    display: none;
+}
 @media only screen and (max-width: 1020px) {
+    #menu-button {
+        display: block;
+        position: fixed;
+        right: 20px;
+        top: 100px;
+    }
     #menu {
-        height: 250px;
-        padding-left: 0px;
+        display: none;
+    }
+    #tabs-m {
+        z-index: 9999;
+        position: fixed;
+        background: whitesmoke;
+        width: 100%;
+        top: 0;
+        margin-left: 0;
+        margin-right: 0;
+        display: inline-block;
+        height: 90px;
+        padding-left: 50px;
+        padding-bottom: 190px;
+        border-bottom: 2px solid red;
+        border-right: 2px solid red;
+    }
+
+    #menu-home, #menu-team, #menu-news, #menu-highlights, #menu-volunteer, #menu-gallery, #menu-contact, #menu-donate {
+        font-size: 40px;
+        border: 2px solid lightcoral;
+        display: block;
+        width: fit-content;
+        margin-top: 20px;
+        background: rgb(0,0,0,0.0);
+        margin-left: 0;
+        z-index: 99999;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #menu-donate {
+        color: red;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }
+    
+    #volunteer-image {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #volunteers {
+        padding: 20px;
+        width: auto;
+        padding-bottom: 50px;
+    }
+
+    #mask {
+        width: auto;
+        padding: 20px;
+        padding-bottom: 80px;
+    }
+
+    .article-body {
+        width: auto;
+        height: 500px;
+        font-size: 40px;
+        padding-bottom: 30px;
+    }
+    .article-image {
+        width: auto;
+        max-width: 100%;
+        height: 500px;
+    }
+    .article-text {
+        font-size: 20px;
     }
     #menu-name {
-        font-size: 50px;
+        margin-bottom: 120px;
+        font-size: 80px;
     }
     #menubutton {
         opacity: 1;
@@ -14,17 +96,36 @@
         display: block;
     }
     #title-image {
-        margin-top: 200px;
+        margin-top: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #title {
+        margin-top: 20px;
+    }
+    #title-name {
+        margin-top: 300px;
+        margin-bottom: auto;
+    }
+
+    #section {
+        margin-top: 0px;
+        width: 100%;
     }
 
     #section-header, #goals-header {
         font-size: 100px;
+        margin-bottom: 0;
+        margin-top: 40px;
+        display: block;
+        width: auto;
     }
     #section-info {
+        padding-top: 0;
         display: block;
     }
     #section-desc, #goals-desc {
-        font-size: 50px;
+        font-size: 40px;
         line-height: 75px;
         height: 1000px;
     }
@@ -34,17 +135,13 @@
     }
     #news {
         display: block;
+        padding-bottom: 100%;
+    }
+    #contact {
+        display: block;
     }
     .article {
         margin-top: 100px;
-    }
-    .article-image {
-        width: 1000px;
-        height: 600px;
-    }
-    .article-body {
-        width: 1000px;
-        height: 500px;
     }
     .article-header {
         font-size: 50px;
