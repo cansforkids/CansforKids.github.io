@@ -28,11 +28,19 @@ body, html {
     top: 0;
 }
 
+#menu-logo {
+    width: 50px;
+    margin-bottom: 10px;
+    user-select: none;
+}
+
 #menu-name {
     color: var(--maincolor);
     font-family: "Oswald";
     font-size: 25px;
     cursor: default;
+    margin-left: 10px;
+    user-select: none;
 }
 
 #menu-home, #menu-news, #menu-team, #menu-volunteer, #menu-highlights, #menu-contact, #menu-gallery {
@@ -149,12 +157,14 @@ body, html {
 }
 @media only screen and (max-width: 1020px) {
     #menu-name {
-        margin-bottom: 120px;
         font-size: 80px;
+        margin-top: 60px;
+        color: white;
     }
     #menubutton {
         opacity: 1;
-        width: 100px;
+        width: 80px;
+        filter: invert(1);
     }
     #menubutton:focus + #menu {
         display: block;
@@ -163,7 +173,7 @@ body, html {
         display: block;
         position: fixed;
         right: 20px;
-        top: 100px;
+        top: 80px;
     }
     #menu {
         display: none;
@@ -171,37 +181,44 @@ body, html {
     #tabs-m {
         z-index: 9999;
         position: fixed;
-        background: whitesmoke;
+        background: var(--maincolor);
         width: 100%;
         top: 0;
         margin-left: 0;
         margin-right: 0;
         display: inline-block;
-        height: 90px;
+        height: 70px;
         padding-left: 50px;
-        padding-bottom: 190px;
-        border-bottom: 2px solid red;
-        border-right: 2px solid red;
+        padding-bottom: 160px;
+        border: none;
+        box-shadow: 0px 10px 20px rgba(113, 113, 113, 0.4);
     }
 
     #menu-home, #menu-team, #menu-news, #menu-highlights, #menu-volunteer, #menu-gallery, #menu-contact, #menu-donate {
-        font-size: 40px;
-        border: 2px solid lightcoral;
+        font-size: 70px;
         display: block;
-        width: fit-content;
         margin-top: 20px;
+        width: 70%;
+        padding-right: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: right;
+        border-radius: 15px;
+        border-width: 5px;
         background: rgb(0,0,0,0.0);
-        margin-left: 0;
         z-index: 99999;
         margin-left: auto;
         margin-right: auto;
+        border: none;
+        color: white;
     }
 
     #menu-donate {
-        color: red;
+        color: white;
         margin-left: auto;
         margin-right: auto;
         left: 0;
         right: 0;
+        border: none;
     }
 }

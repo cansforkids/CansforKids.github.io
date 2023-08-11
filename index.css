@@ -161,7 +161,7 @@
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-#mask {
+#mask, #mask1 {
     margin-left: auto;
     margin-right: auto;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
@@ -173,10 +173,27 @@
     padding-bottom: 75px;
 }
 
-#mask-header {
+#mask1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#maskinfo {
+    width: 450px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#mask-header, #mask-header1, #mask-header2 {
     color: var(--maincolor);
     font-family: "Oswald";
     font-size: 25px;
+}
+#mask-header1 {
+    text-align: right;
+}
+#mask-header2 {
+    text-align: left;
 }
 
 #mask-info {
@@ -226,6 +243,15 @@
     padding-right: 150px;
     line-height: 33px;
 }
+#volunteer-info1, #volunteer-info2 {
+    font-family: "Roboto Condensed";
+    font-size: 20px;
+    line-height: 33px;
+    text-align: right;
+}
+#volunteer-info2 {
+    text-align: left;
+}
 
 #volunteer-image {
     object-fit: cover;
@@ -242,7 +268,119 @@
 }
 
 
+@media only screen and (max-width: 1020px) {
+#menu-home {
+    color: black;
+    background: white;
+}
 
+#title {
+    height: 1000px;
+    padding-top: 150px;
+    padding-bottom: 175px;
+}
+#title-image {
+    height: 1000px;
+}
+#section-header {
+    font-size: 30px;
+}
+
+#volunteer-image {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#volunteers {
+    padding: 20px;
+    width: auto;
+    padding-bottom: 50px;
+}
+
+#mask {
+    width: auto;
+    padding: 20px;
+    padding-bottom: 80px;
+}
+
+.article-body {
+    width: auto;
+    height: 500px;
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+.article-image {
+    width: auto;
+    max-width: 100%;
+    height: 500px;
+}
+.article-text {
+    font-size: 20px;
+}
+#title-image {
+    margin-top: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#title {
+    margin-top: 20px;
+}
+#title-name {
+    margin-top: 300px;
+    margin-bottom: auto;
+}
+
+#section {
+    margin-top: 0px;
+    width: 100%;
+}
+
+#section-header, #goals-header {
+    font-size: 70px;
+    margin-bottom: 0;
+    margin-top: 40px;
+    padding-top: 30px;
+    text-align: center;
+    padding-bottom: 30px;
+    display: block;
+    width: auto;
+}
+#section-info {
+    padding-top: 0;
+    text-align: center;
+    display: block;
+}
+#section-desc, #goals-desc {
+    font-size: 40px;
+    line-height: 75px;
+    height: 1000px;
+}
+#section-image {
+    width: 1000px;
+    height: 600px;
+}
+#news {
+    display: block;
+    padding-bottom: 100%;
+}
+#contact {
+    display: block;
+}
+.article {
+    margin-top: 100px;
+}
+.article-header {
+    font-size: 50px;
+}
+.article-text {
+    font-size: 40px;
+}
+.article-more {
+    font-size: 50px;
+}
+
+
+}
 
 
 
